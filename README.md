@@ -1,8 +1,8 @@
-Zoomin Starwars Asignment
+#### Zoomin Starwars Asignment
 
-Welcome! 
+## Welcome! 
 
-To view this project in the browser:
+###### To view this project in the browser:
 ```
 cd zoomin-starwars-asignment
 ```
