@@ -1,10 +1,21 @@
-#Zoomin Starwars Asignment
+Zoomin Starwars Asignment
 
-###Welcome! 
+Welcome! 
 
 To view this project in the browser:
 ```
 cd zoomin-starwars-asignment
-yarn start
+```
+
+and then
 
 ```
+yarn start
+```
+
+or 
+
+```
+npm start
+```
+
