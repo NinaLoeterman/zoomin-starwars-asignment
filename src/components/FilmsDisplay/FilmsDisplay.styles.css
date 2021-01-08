@@ -5,3 +5,8 @@
     align-items: center;
     max-width: 1100px;
 }
+
+.FilmsDisplay_loading {
+    color: var(--main-light-color);
+    margin-top: 50px;
+}

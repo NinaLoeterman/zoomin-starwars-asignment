@@ -6,9 +6,7 @@ const useFilmsDisplay = () => {
 
   const getFilmsFromAPI = async () => {
     const tempFilms = await getFilms();
-    console.log(tempFilms);
     if (tempFilms.res) {
-      console.log(tempFilms.res);
       setFilms(tempFilms.res);
     } else return;
   };
