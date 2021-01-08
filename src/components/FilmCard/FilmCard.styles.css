@@ -24,8 +24,7 @@
   color: var(--main-light-color);
   font-size: 1.5rem;
   font-family: var(--main-font);
-  margin: 10px 0px;
-  /* text-align: left; */
+  margin-bottom: 10px;
 }
 
 .FilmCard_icon_wrapper {
