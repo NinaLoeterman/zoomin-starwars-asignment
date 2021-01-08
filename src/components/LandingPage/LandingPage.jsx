@@ -5,6 +5,7 @@ import { useHistory } from "react-router-dom";
 
 const LandingPage = () => {
   const history = useHistory();
+  
   const text = { force: "May the force be with you" };
 
   const navigateToFilms = () => {

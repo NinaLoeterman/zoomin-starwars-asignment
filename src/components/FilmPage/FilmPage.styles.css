@@ -1,0 +1,15 @@
+.FilmPage {
+    background-color: var(--main-bg-color);
+    height: 100vh;
+    width: 100vw;
+}
+
+.FilmPage_content {
+    padding: 10%;
+    display: flex;
+}
+
+.FilmPage_title {
+    color: var(--main-light-color);
+    font-size: 3rem;
+}
