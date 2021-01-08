@@ -9,7 +9,7 @@ const FilmsDisplay = () => {
 
   return (
     <div className={"FilmsDisplay"}>
-      {films && films.map((film) => <FilmCard film={film} />)}
+      {films && films.map((film) => <FilmCard key={film.episode_id} film={film} />)}
     </div>
   );
 };
