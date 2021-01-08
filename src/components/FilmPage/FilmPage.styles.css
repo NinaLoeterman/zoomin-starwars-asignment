@@ -7,9 +7,21 @@
 .FilmPage_content {
     padding: 10%;
     display: flex;
+    flex-direction: column;
 }
 
 .FilmPage_title {
     color: var(--main-light-color);
     font-size: 3rem;
+}
+
+.FilmPage_title_wrapper {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.FilmPage_FilmsDisplay_wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
