@@ -16,8 +16,8 @@ const FilmCard = ({ film = {} }) => {
 
   return (
     <div className={`FilmCard ${isFavorite && "FilmCard_favorite"}`}>
-      <div>{film.title}</div>
-      <div onClick={toggleIsFavorite}>
+      <div className={'FilmCard_title'}>{film.title}</div>
+      <div className={"FilmCard_icon_wrapper"} onClick={toggleIsFavorite}>
         <FavoriteIcon isFavorite={isFavorite} />
       </div>
     </div>
