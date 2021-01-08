@@ -1,0 +1,12 @@
+.FilmCard {
+    height: 200px;
+    width: 300px;
+    background-color: var(--secondary-bg-color);
+    margin: 20px;
+    border-radius: 10px;
+    border: 2px solid var(--secondary-bg-color);
+}
+
+.FilmCard_favorite {
+    border: 2px solid var(--main-accent-color);
+}

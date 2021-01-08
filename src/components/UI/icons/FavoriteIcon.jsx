@@ -1,6 +1,6 @@
 import React from "react";
 
-const FavoriteIcon = ({isFavorite}) => {
+const FavoriteIcon = ({ isFavorite = false }) => {
   return (
     <svg
       width="50"

@@ -1,5 +1,6 @@
 import React from "react";
 import "./FilmPage.styles.css";
+import FilmsDisplay from '../FilmsDisplay/FilmsDisplay.jsx';
 
 const FilmPage = () => {
   const text = {
