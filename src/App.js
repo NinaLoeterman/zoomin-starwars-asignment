@@ -3,6 +3,7 @@ import "./App.css";
 import { getFilms } from "./apiService/ApiService";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import LandingPage from "./components/LandingPage/LandingPage";
+import FilmPage from './components/FilmPage/FilmPage.jsx';
 
 function App() {
   useEffect(() => {
@@ -13,11 +14,11 @@ function App() {
     <div className="App">
       <Router>
         <Switch>
-          <Route path="/">
+          <Route exact path="/">
             <LandingPage />
           </Route>
-          <Route path="/films">
-            <div></div>
+          <Route exact path="/films">
+            <FilmPage />
           </Route>
         </Switch>
       </Router>
