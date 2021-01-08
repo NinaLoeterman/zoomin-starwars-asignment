@@ -11,11 +11,16 @@ const FilmCard = ({ film = {} }) => {
 
   return (
     <div className={`FilmCard ${isFavorite && "FilmCard_favorite"}`}>
-      <div className={"FilmCard_icon_wrapper"} onClick={toggleIsFavorite}>
-        {isHistoricallFavorite && isFavorite && <TagIcon />}
-        <FavoriteIcon isFavorite={isFavorite} />
+      <div className={"FilmCard_content"}>
+        <div className={"FilmCard_icon_wrapper"} onClick={toggleIsFavorite}>
+          {isHistoricallFavorite && isFavorite && <TagIcon />}
+          <FavoriteIcon isFavorite={isFavorite} />
+        </div>
+        <div className={"FilmCard_text_wrapper"}>
+          <div className={"FilmCard_title"}>{film.title}</div>
+          <div className={"FilmCard_opening_crawl"}>{film.opening_crawl}</div>
+        </div>
       </div>
-      <div className={"FilmCard_title"}>{film.title}</div>
     </div>
   );
 };
