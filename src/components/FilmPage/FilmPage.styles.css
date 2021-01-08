@@ -13,6 +13,8 @@
 .FilmPage_title {
     color: var(--main-light-color);
     font-size: 3rem;
+    font-family: var(--main-font);
+    margin-bottom: 50px;
 }
 
 .FilmPage_title_wrapper {

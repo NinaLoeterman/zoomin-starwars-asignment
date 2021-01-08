@@ -10,12 +10,14 @@ cd zoomin-starwars-asignment
 and then
 
 ```
+yarn install
 yarn start
 ```
 
 or 
 
 ```
+npm install
 npm start
 ```
 
