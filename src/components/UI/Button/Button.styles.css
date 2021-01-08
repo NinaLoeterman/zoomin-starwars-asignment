@@ -1,0 +1,19 @@
+.Button {
+    border: none;
+    color: blue;
+    outline: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.Button_large {
+    background-color: var(--secondary-bg-color);
+    color: var(--main-accent-color);
+    font-size: 2rem;
+}
+
+.Button_small {
+    background-color: var(--main-accent-color);
+    color: var(--main-light-color);
+    font-size: 1rem;
+}
