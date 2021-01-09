@@ -3,18 +3,20 @@
 ## Welcome! 
 
 ### To view this project in the browser:
+First clone the repository.
+then:
 ```
 cd zoomin-starwars-asignment
 ```
 
-and then
+and then:
 
 ```
 yarn install
 yarn start
 ```
 
-or 
+or:
 
 ```
 npm install
