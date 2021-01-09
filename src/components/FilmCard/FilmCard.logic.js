@@ -28,12 +28,14 @@ const useFilmCard = (film, isHistory) => {
     } else {
       const parsedHistory = JSON.parse(fullHistory);
       const tempHistory = [];
-      if (parsedHistory.length) {
+      if (Array.isArray(parsedHistory)) {
         parsedHistory.forEach((item) => {
-          tempHistory.push(item);
+          tempHistory.unshift(item);
         });
+      } else {
+        tempHistory.unshift(parsedHistory);
       }
-      tempHistory.push(film);
+      tempHistory.unshift(film);
       localStorage.setItem("fullHistory", JSON.stringify(tempHistory));
     }
   };

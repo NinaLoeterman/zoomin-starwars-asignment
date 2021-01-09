@@ -22,7 +22,13 @@ const useFilmsDisplay = () => {
 
   const getFavoritesHistory = () => {
     const fullHistory = localStorage.getItem("fullHistory");
-    setFavoritesHistory(JSON.parse(fullHistory).reverse());
+    const parsedHistory = JSON.parse(fullHistory);
+    if (!parsedHistory) return;
+    if (Array.isArray(parsedHistory)) {
+      setFavoritesHistory(parsedHistory);
+    } else {
+      setFavoritesHistory([parsedHistory])
+    }
   };
 
   useEffect(() => {
