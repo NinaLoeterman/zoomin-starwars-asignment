@@ -1,14 +1,10 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./App.css";
-import { getFilms } from "./apiService/ApiService";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import LandingPage from "./components/LandingPage/LandingPage";
 import FilmPage from './components/FilmPage/FilmPage.jsx';
 
 function App() {
-  useEffect(() => {
-    getFilms();
-  }, []);
 
   return (
     <div className="App">
