@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 
-const useFilmCard = (film) => {
+const useFilmCard = (film, isHistory) => {
   const [isFavorite, setIsFavorite] = useState(false);
-  const [isHistoricallFavorite, setIsHistoricallyFavorite] = useState(false);
+  const [isHistoricalFavorite, setIsHistoricallyFavorite] = useState(false);
 
   useEffect(() => {
     const favoriteFromStorage = localStorage.getItem(film.episode_id);
-    if (favoriteFromStorage) {
+    if (!isHistory && favoriteFromStorage) {
       setIsFavorite(true);
       setIsHistoricallyFavorite(true);
     }
@@ -47,7 +47,7 @@ const useFilmCard = (film) => {
     setIsFavorite(!isFavorite);
   };
 
-  return { toggleIsFavorite, isFavorite, isHistoricallFavorite };
+  return { toggleIsFavorite, isFavorite, isHistoricalFavorite };
 };
 
 export default useFilmCard;
