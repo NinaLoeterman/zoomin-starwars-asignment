@@ -1,9 +1,10 @@
 import React from "react";
 import FilmCard from '../FilmCard/FilmCard.jsx';
+import './FilmCardsWrapper.styles.css';
 
-const FilmCards = ({films, isHistory}) => {
+const FilmCardsWrapper = ({films, isHistory}) => {
   return (
-    <div className={"FilmsDisplay"}>
+    <div className={"FilmCardsWrapper"}>
       {films?.length > 0
         ? films.map((film, index) => <FilmCard isHistory={isHistory} key={index} film={film} />)
         : (
@@ -13,4 +14,4 @@ const FilmCards = ({films, isHistory}) => {
   );
 };
 
-export default FilmCards;
+export default FilmCardsWrapper;
