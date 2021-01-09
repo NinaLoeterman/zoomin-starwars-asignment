@@ -10,3 +10,7 @@
     color: var(--main-light-color);
     margin-top: 50px;
 }
+
+.FilmsDisplay_button_wrapper {
+    margin-bottom: 20px;
+}

@@ -1,9 +1,8 @@
 import React from "react";
 import useFilmsDisplay from "./FilmsDisplay.logic";
-import FilmCard from "../FilmCard/FilmCard.jsx";
 import "./FilmsDisplay.styles.css";
 import Button from "../UI/Button/Button.jsx";
-import FilmCards from '../FilmCards/Filmcards.jsx';
+import FilmCards from "../FilmCards/Filmcards.jsx";
 
 const FilmsDisplay = () => {
   const {
@@ -15,12 +14,17 @@ const FilmsDisplay = () => {
 
   return (
     <div>
-      <Button
-        onClick={toggleHistory}
-        title={showHistory ? "Back To Films" : "Full History"}
-      />
+      <div className={"FilmsDisplay_button_wrapper"}>
+        <Button
+          onClick={toggleHistory}
+          title={showHistory ? "Back to Films" : "Full History of Favorites"}
+        />
+      </div>
       <div className={"FilmsDisplay"}>
-       <FilmCards isHistory={showHistory} films={showHistory ? favoritesHistory : films}/>
+        <FilmCards
+          isHistory={showHistory}
+          films={showHistory ? favoritesHistory : films}
+        />
       </div>
     </div>
   );
