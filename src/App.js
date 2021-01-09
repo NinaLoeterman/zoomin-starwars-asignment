@@ -8,7 +8,7 @@ function App() {
 
   return (
     <div className="App">
-      <BrowserRouter basename="https://ninaloeterman.github.io/zoomin-starwars-asignment">
+      <BrowserRouter basename="/https://ninaloeterman.github.io/zoomin-starwars-asignment">
         <Switch>
           <Route exact path="/">
             <LandingPage />
