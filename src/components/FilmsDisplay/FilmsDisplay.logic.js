@@ -21,13 +21,17 @@ const useFilmsDisplay = () => {
   };
 
   const getFavoritesHistory = () => {
-    const fullHistory = localStorage.getItem("fullHistory");
-    const parsedHistory = JSON.parse(fullHistory);
-    if (!parsedHistory) return;
-    if (Array.isArray(parsedHistory)) {
-      setFavoritesHistory(parsedHistory);
-    } else {
-      setFavoritesHistory([parsedHistory])
+    try {
+      const fullHistory = localStorage.getItem("fullHistory");
+      const parsedHistory = JSON.parse(fullHistory);
+      if (!parsedHistory) return;
+      if (Array.isArray(parsedHistory)) {
+        setFavoritesHistory(parsedHistory);
+      } else {
+        setFavoritesHistory([parsedHistory]);
+      }
+    } catch (e) {
+      alert("There was an error retrieving favorites history");
     }
   };
 

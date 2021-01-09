@@ -5,38 +5,58 @@ const useFilmCard = (film, isHistory) => {
   const [isHistoricalFavorite, setIsHistoricallyFavorite] = useState(false);
 
   useEffect(() => {
-    const favoriteFromStorage = localStorage.getItem(film.episode_id);
-    if (!isHistory && favoriteFromStorage) {
-      setIsFavorite(true);
-      setIsHistoricallyFavorite(true);
-    }
+    checkFavorites();
   }, [film]);
 
+  const checkFavorites = () => {
+    try {
+      const favoriteFromStorage = localStorage.getItem(film.episode_id);
+      if (!isHistory && favoriteFromStorage) {
+        setIsFavorite(true);
+        setIsHistoricallyFavorite(true);
+      }
+    } catch (e) {
+      console.error("error getting item from local storage", e);
+    }
+  };
+
   const saveToFavorites = () => {
-    localStorage.setItem(film.episode_id, "saved");
-    saveToStorageHistory();
+    try {
+      localStorage.setItem(film.episode_id, "saved");
+      saveToStorageHistory();
+    } catch (e) {
+      alert("There was a saving your favorite film");
+    }
   };
   const deleteFromFavorites = () => {
-    localStorage.removeItem(film.episode_id);
-    setIsHistoricallyFavorite(false);
+    try {
+      localStorage.removeItem(film.episode_id);
+      setIsHistoricallyFavorite(false);
+    } catch (e) {
+      alert("There was a deleting the film");
+    }
   };
 
   const saveToStorageHistory = () => {
-    const fullHistory = localStorage.getItem("fullHistory");
-    if (!fullHistory) {
-      localStorage.setItem("fullHistory", JSON.stringify(film));
-    } else {
-      const parsedHistory = JSON.parse(fullHistory);
-      const tempHistory = [];
-      if (Array.isArray(parsedHistory)) {
-        parsedHistory.forEach((item) => {
-          tempHistory.unshift(item);
-        });
+    try {
+      const fullHistory = localStorage.getItem("fullHistory");
+      if (!fullHistory) {
+        localStorage.setItem("fullHistory", JSON.stringify(film));
       } else {
-        tempHistory.unshift(parsedHistory);
+        const parsedHistory = JSON.parse(fullHistory);
+        const tempHistory = [];
+        if (Array.isArray(parsedHistory)) {
+          parsedHistory.forEach((item) => {
+            tempHistory.unshift(item);
+          });
+        } else {
+          tempHistory.unshift(parsedHistory);
+        }
+        tempHistory.unshift(film);
+        localStorage.setItem("fullHistory", JSON.stringify(tempHistory));
       }
-      tempHistory.unshift(film);
-      localStorage.setItem("fullHistory", JSON.stringify(tempHistory));
+    } catch (e) {
+      alert("There was a problem saving to storage history");
     }
   };
 
