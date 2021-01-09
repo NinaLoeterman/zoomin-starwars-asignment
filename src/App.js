@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, HashRouter, Switch, Route } from "react-router-dom";
 import LandingPage from "./components/LandingPage/LandingPage";
 import FilmPage from './components/FilmPage/FilmPage.jsx';
 
@@ -8,7 +8,7 @@ function App() {
 
   return (
     <div className="App">
-      <Router>
+      <HashRouter basename={"/"}>
         <Switch>
           <Route exact path="/">
             <LandingPage />
@@ -17,7 +17,7 @@ function App() {
             <FilmPage />
           </Route>
         </Switch>
-      </Router>
+      </HashRouter>
     </div>
   );
 }
