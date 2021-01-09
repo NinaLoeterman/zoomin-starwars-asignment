@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import { HashRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import LandingPage from "./components/LandingPage/LandingPage";
 import FilmPage from './components/FilmPage/FilmPage.jsx';
 
@@ -8,7 +8,7 @@ function App() {
 
   return (
     <div className="App">
-      <Router>
+      <Router basename={process.env.REACT_APP_PUBLIC_URL}>
         <Switch>
           <Route exact path="/">
             <LandingPage />

@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "https://ninaloeterman.github.io/zoomin-starwars-asignment/static/css/main.ec7a60a8.chunk.css",
-    "main.js": "https://ninaloeterman.github.io/zoomin-starwars-asignment/static/js/main.6adb1fb6.chunk.js",
-    "main.js.map": "https://ninaloeterman.github.io/zoomin-starwars-asignment/static/js/main.6adb1fb6.chunk.js.map",
-    "runtime-main.js": "https://ninaloeterman.github.io/zoomin-starwars-asignment/static/js/runtime-main.bfe5a18e.js",
-    "runtime-main.js.map": "https://ninaloeterman.github.io/zoomin-starwars-asignment/static/js/runtime-main.bfe5a18e.js.map",
-    "static/js/2.48ac44f0.chunk.js": "https://ninaloeterman.github.io/zoomin-starwars-asignment/static/js/2.48ac44f0.chunk.js",
-    "static/js/2.48ac44f0.chunk.js.map": "https://ninaloeterman.github.io/zoomin-starwars-asignment/static/js/2.48ac44f0.chunk.js.map",
-    "static/js/3.77586e22.chunk.js": "https://ninaloeterman.github.io/zoomin-starwars-asignment/static/js/3.77586e22.chunk.js",
-    "static/js/3.77586e22.chunk.js.map": "https://ninaloeterman.github.io/zoomin-starwars-asignment/static/js/3.77586e22.chunk.js.map",
-    "index.html": "https://ninaloeterman.github.io/zoomin-starwars-asignment/index.html",
-    "static/css/main.ec7a60a8.chunk.css.map": "https://ninaloeterman.github.io/zoomin-starwars-asignment/static/css/main.ec7a60a8.chunk.css.map",
-    "static/js/2.48ac44f0.chunk.js.LICENSE.txt": "https://ninaloeterman.github.io/zoomin-starwars-asignment/static/js/2.48ac44f0.chunk.js.LICENSE.txt"
+    "main.css": "/zoomin-starwars-asignment/static/css/main.ec7a60a8.chunk.css",
+    "main.js": "/zoomin-starwars-asignment/static/js/main.46dee911.chunk.js",
+    "main.js.map": "/zoomin-starwars-asignment/static/js/main.46dee911.chunk.js.map",
+    "runtime-main.js": "/zoomin-starwars-asignment/static/js/runtime-main.c62e6903.js",
+    "runtime-main.js.map": "/zoomin-starwars-asignment/static/js/runtime-main.c62e6903.js.map",
+    "static/js/2.48ac44f0.chunk.js": "/zoomin-starwars-asignment/static/js/2.48ac44f0.chunk.js",
+    "static/js/2.48ac44f0.chunk.js.map": "/zoomin-starwars-asignment/static/js/2.48ac44f0.chunk.js.map",
+    "static/js/3.77586e22.chunk.js": "/zoomin-starwars-asignment/static/js/3.77586e22.chunk.js",
+    "static/js/3.77586e22.chunk.js.map": "/zoomin-starwars-asignment/static/js/3.77586e22.chunk.js.map",
+    "index.html": "/zoomin-starwars-asignment/index.html",
+    "static/css/main.ec7a60a8.chunk.css.map": "/zoomin-starwars-asignment/static/css/main.ec7a60a8.chunk.css.map",
+    "static/js/2.48ac44f0.chunk.js.LICENSE.txt": "/zoomin-starwars-asignment/static/js/2.48ac44f0.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.bfe5a18e.js",
+    "static/js/runtime-main.c62e6903.js",
     "static/js/2.48ac44f0.chunk.js",
     "static/css/main.ec7a60a8.chunk.css",
-    "static/js/main.6adb1fb6.chunk.js"
+    "static/js/main.46dee911.chunk.js"
   ]
 }
