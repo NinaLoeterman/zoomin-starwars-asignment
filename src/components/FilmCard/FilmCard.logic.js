@@ -14,10 +14,28 @@ const useFilmCard = (film) => {
 
   const saveToFavorites = () => {
     localStorage.setItem(film.episode_id, "saved");
+    saveToStorageHistory();
   };
   const deleteFromFavorites = () => {
     localStorage.removeItem(film.episode_id);
     setIsHistoricallyFavorite(false);
+  };
+
+  const saveToStorageHistory = () => {
+    const fullHistory = localStorage.getItem("fullHistory");
+    if (!fullHistory) {
+      localStorage.setItem("fullHistory", JSON.stringify(film));
+      return;
+    }
+    const parsedHistory = JSON.parse(fullHistory);
+    const tempHistory = [];
+    if (parsedHistory.length > 0) {
+      parsedHistory.forEach((item) => {
+        tempHistory.push(item);
+      });
+    }
+    tempHistory.push(film);
+    localStorage.setItem("fullHistory", JSON.stringify(tempHistory));
   };
 
   const toggleIsFavorite = () => {
