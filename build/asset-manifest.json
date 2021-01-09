@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/zoomin-starwars-asignment/static/css/main.ec7a60a8.chunk.css",
-    "main.js": "/zoomin-starwars-asignment/static/js/main.e79a1ede.chunk.js",
-    "main.js.map": "/zoomin-starwars-asignment/static/js/main.e79a1ede.chunk.js.map",
-    "runtime-main.js": "/zoomin-starwars-asignment/static/js/runtime-main.c62e6903.js",
-    "runtime-main.js.map": "/zoomin-starwars-asignment/static/js/runtime-main.c62e6903.js.map",
+    "main.css": "/zoomin-starwars-asignment/static/css/main.46bd96fc.chunk.css",
+    "main.js": "/zoomin-starwars-asignment/static/js/main.9d18ccee.chunk.js",
+    "main.js.map": "/zoomin-starwars-asignment/static/js/main.9d18ccee.chunk.js.map",
+    "runtime-main.js": "/zoomin-starwars-asignment/static/js/runtime-main.b4918e52.js",
+    "runtime-main.js.map": "/zoomin-starwars-asignment/static/js/runtime-main.b4918e52.js.map",
     "static/js/2.48ac44f0.chunk.js": "/zoomin-starwars-asignment/static/js/2.48ac44f0.chunk.js",
     "static/js/2.48ac44f0.chunk.js.map": "/zoomin-starwars-asignment/static/js/2.48ac44f0.chunk.js.map",
-    "static/js/3.77586e22.chunk.js": "/zoomin-starwars-asignment/static/js/3.77586e22.chunk.js",
-    "static/js/3.77586e22.chunk.js.map": "/zoomin-starwars-asignment/static/js/3.77586e22.chunk.js.map",
+    "static/js/3.6e33aae7.chunk.js": "/zoomin-starwars-asignment/static/js/3.6e33aae7.chunk.js",
+    "static/js/3.6e33aae7.chunk.js.map": "/zoomin-starwars-asignment/static/js/3.6e33aae7.chunk.js.map",
     "index.html": "/zoomin-starwars-asignment/index.html",
-    "static/css/main.ec7a60a8.chunk.css.map": "/zoomin-starwars-asignment/static/css/main.ec7a60a8.chunk.css.map",
+    "static/css/main.46bd96fc.chunk.css.map": "/zoomin-starwars-asignment/static/css/main.46bd96fc.chunk.css.map",
     "static/js/2.48ac44f0.chunk.js.LICENSE.txt": "/zoomin-starwars-asignment/static/js/2.48ac44f0.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.c62e6903.js",
+    "static/js/runtime-main.b4918e52.js",
     "static/js/2.48ac44f0.chunk.js",
-    "static/css/main.ec7a60a8.chunk.css",
-    "static/js/main.e79a1ede.chunk.js"
+    "static/css/main.46bd96fc.chunk.css",
+    "static/js/main.9d18ccee.chunk.js"
   ]
 }
