@@ -10,6 +10,7 @@ const FilmsDisplay = () => {
     favoritesHistory,
     toggleHistory,
     showHistory,
+    text
   } = useFilmsDisplay();
 
   return (
@@ -17,7 +18,7 @@ const FilmsDisplay = () => {
       <div className={"FilmsDisplay_button_wrapper"}>
         <Button
           onClick={toggleHistory}
-          title={showHistory ? "Back to Films" : "Full History of Favorites"}
+          title={showHistory ? text.films : text.history}
         />
       </div>
       <div className={"FilmsDisplay"}>

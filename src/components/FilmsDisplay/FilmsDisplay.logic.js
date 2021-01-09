@@ -6,6 +6,11 @@ const useFilmsDisplay = () => {
   const [favoritesHistory, setFavoritesHistory] = useState([]);
   const [showHistory, setShowHistory] = useState(false);
 
+  const text = {
+    films: "Back to Films",
+    history: "Full History of Favorites"
+  }
+
   const getFilmsFromAPI = async () => {
     const tempFilms = await getFilms();
     if (tempFilms.res) {
@@ -38,7 +43,7 @@ const useFilmsDisplay = () => {
   useEffect(() => {
     getFilmsFromAPI();
   }, []);
-  return { films, favoritesHistory, toggleHistory, showHistory };
+  return { films, favoritesHistory, toggleHistory, showHistory, text };
 };
 
 export default useFilmsDisplay;
